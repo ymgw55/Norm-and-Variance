@@ -24,7 +24,7 @@ $ bash script/docker/build.sh
 
 Set the `DOCKER_HOME` environment variable to specify the path of the directory to be mounted as the home directory inside the Docker container.
 ```bash
-export DOCKER_HOME="path/to/your/docker_home"
+$ export DOCKER_HOME="path/to/your/docker_home"
 ```
 
 ### Docker run
@@ -62,7 +62,7 @@ output/
 To regenerate statistical measures:
 
 ```bash
-python src/save_token_stats.py --model_name model_name
+$ python src/save_token_stats.py --model_name model_name
 ```
 
 The `model_name` values supported are `bert-base-uncased`, `bert-large-uncased`, `roberta-base`, `roberta-large`, `gpt2`, `gpt2-medium`.
@@ -71,7 +71,7 @@ The `model_name` values supported are `bert-base-uncased`, `bert-large-uncased`,
 ### PCA Plot in Fig. 1
 
 ```bash
-python src/Fig1_make_pca_scatterplot.py
+$ python src/Fig1_make_pca_scatterplot.py
 ```
 
 <div align="center">
@@ -83,7 +83,7 @@ This script also generates Fig. 8. and Table 2. See [README.Appendix.md](README.
 ### Trade-off between $M(X_t)$ and $V(X_t)$ in Fig.2
 
 ```bash
-python src/Fig2_make_VXt_on_MXt_scatterplot.py
+$ python src/Fig2_make_VXt_on_MXt_scatterplot.py
 ```
 
 <div align="center">
@@ -95,7 +95,7 @@ python src/Fig2_make_VXt_on_MXt_scatterplot.py
 ### C.V. of $Q(X_t)$, regression slopes of $V (X_t)$ on $M(X_t)$, and the corresponding $R^2$ in Fig4
 
 ```bash
-python src/Fig4_make_QXtCV_MXtVXtSlope_MXtVXtR2_plot.py
+$ python src/Fig4_make_QXtCV_MXtVXtSlope_MXtVXtR2_plot.py
 ```
 
 <div align="center">
@@ -105,7 +105,7 @@ python src/Fig4_make_QXtCV_MXtVXtSlope_MXtVXtR2_plot.py
 ### Bar Graphs for $M(X)/Q(X)$, $V_W(X)/Q(X)$, $V_B(X)/Q(X)$ in Fig. 5 
 
 ```bash
-python src/Fig5_make_MXVwXVbX_per_QX_bargraph.py
+$ python src/Fig5_make_MXVwXVbX_per_QX_bargraph.py
 ```
 
 <div align="center">
@@ -115,7 +115,7 @@ python src/Fig5_make_MXVwXVbX_per_QX_bargraph.py
 ###  Plot of $V_W(X)/V(X)$ in Fig.6
 
 ```bash
-python src/Fig6_make_VwX_per_VX_plot.py
+$ python src/Fig6_make_VwX_per_VX_plot.py
 ```
 
 <div align="center">
@@ -125,7 +125,7 @@ python src/Fig6_make_VwX_per_VX_plot.py
 ### Scatter plots of $Q(X_t)$, $M(X_t)$, and $V(X_t)$ against $\textrm{log}_{10}n_t$ in Fig.7
 
 ```bash
-python src/Fig7_make_BERTbase_QXt_MXt_VXt_scatterplot.py
+$ python src/Fig7_make_BERTbase_QXt_MXt_VXt_scatterplot.py
 ```
 <div align="center">
 <img src=".github/images/BERTbase_QXt_MXt_VXt_scatterplot.png" alt="fig7.png" width="90%">
