@@ -1,6 +1,6 @@
 # Norm-and-Variance
 
-> [Norm of Mean Contextualized Embeddings Determines their Variance](https://arxiv.org/abs/2409.11253)                 
+> [Norm of Mean Contextualized Embeddings Determines their Variance](https://aclanthology.org/2025.coling-main.521/)                 
 > [Hiroaki Yamagiwa](https://ymgw55.github.io/), [Hidetoshi Shimodaira](http://stat.sys.i.kyoto-u.ac.jp/members/shimo/)          
 > *COLING 2025*
 
@@ -131,13 +131,38 @@ python src/Fig7_make_BERTbase_QXt_MXt_VXt_scatterplot.py
 <img src=".github/images/BERTbase_QXt_MXt_VXt_scatterplot.png" alt="fig7.png" width="90%">
 </div>
 
-## References
+## Reference
 
 The code for generating embeddings was inspired by:
 
 > Wannasuphoprasit et al. [Solving Cosine Similarity Underestimation between High Frequency Words by $\ell_2$ Norm Discounting](https://aclanthology.org/2023.findings-acl.550/). ACL 2023 Findings.
  
 We sincerely thank the authors for sharing their [LivNLP/cosine-discounting](https://github.com/LivNLP/cosine-discounting) codebase.
+
+# Citation
+If you find our code or model useful in your research, please cite our paper:
+
+```
+@inproceedings{yamagiwa-shimodaira-2025-norm,
+    title = "Norm of Mean Contextualized Embeddings Determines their Variance",
+    author = "Yamagiwa, Hiroaki  and
+      Shimodaira, Hidetoshi",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.521/",
+    pages = "7778--7808",
+    abstract = "Contextualized embeddings vary by context, even for the same token, and form a distribution in the embedding space. To analyze this distribution, we focus on the norm of the mean embedding and the variance of the embeddings. In this study, we first demonstrate that these values follow the well-known formula for variance in statistics and provide an efficient sequential computation method. Then, by observing embeddings from intermediate layers of several Transformer models, we found a strong trade-off relationship between the norm and the variance: as the mean embedding becomes closer to the origin, the variance increases. Furthermore, when the sets of token embeddings are treated as clusters, we show that the variance of the entire embedding set can theoretically be decomposed into the within-cluster variance and the between-cluster variance. We found experimentally that as the layers of Transformer models deepen, the embeddings move farther from the origin, the between-cluster variance relatively decreases, and the within-cluster variance relatively increases. These results are consistent with existing studies on the anisotropy of the embedding spaces across layers."
+}
+```
 
 ## Appendix
 See [README.Appendix.md](README.Appendix.md) for the experiments in the Appendix.
