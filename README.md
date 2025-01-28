@@ -80,7 +80,7 @@ $ python src/Fig1_make_pca_scatterplot.py
 
 This script also generates Fig. 8. and Table 2. See [README.Appendix.md](README.Appendix.md)  for more details.
 
-### Trade-off between $M(X_t)$ and $V(X_t)$ in Fig.2
+### Trade-off between $M(X_t)$ and $V(X_t)$ in Fig. 2
 
 ```bash
 $ python src/Fig2_make_VXt_on_MXt_scatterplot.py
@@ -112,7 +112,7 @@ $ python src/Fig5_make_MXVwXVbX_per_QX_bargraph.py
 <img src=".github/images/MXVwXVbX_per_QX_bargraph.png" alt="fig5.png" width="90%">
 </div>
 
-###  Plot of $V_W(X)/V(X)$ in Fig.6
+###  Plot of $V_W(X)/V(X)$ in Fig. 6
 
 ```bash
 $ python src/Fig6_make_VwX_per_VX_plot.py
@@ -122,7 +122,7 @@ $ python src/Fig6_make_VwX_per_VX_plot.py
 <img src=".github/images/VwX_per_VX_plot.png" alt="fig6.png" width="75%">
 </div>
 
-### Scatter plots of $Q(X_t)$, $M(X_t)$, and $V(X_t)$ against $\textrm{log}_{10}n_t$ in Fig.7
+### Scatter plots of $Q(X_t)$, $M(X_t)$, and $V(X_t)$ against $\textrm{log}_{10}n_t$ in Fig. 7
 
 ```bash
 $ python src/Fig7_make_BERTbase_QXt_MXt_VXt_scatterplot.py

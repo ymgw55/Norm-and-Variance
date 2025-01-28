@@ -2,7 +2,7 @@
 
 ## Code
 
-### Fig8 and Table2 for PCA-trnasformed embeddings in Fig.1
+### Fig. 8 and Table 2 for PCA-trnasformed embeddings in Fig. 1
 
 Fig. 1 generation also produces Fig. 8 and Table 2.
 
@@ -16,7 +16,7 @@ Correct: $N_r := 2 + \left\lfloor 4\sqrt{\frac{|T_r|}{\max_r{|T_r|}}} \right\rfl
 
 Typo (in the paper): $N_r := 2 + \left\lfloor \sqrt{\frac{4|T_r|}{\max_r{|T_r|}}} \right\rfloor$
 
-### Sentence length histogram in Fig.9
+### Sentence length histogram in Fig. 9
 
 ```bash
 python src/Appendix_Fig9_make_sentences_histogram.py
@@ -26,7 +26,7 @@ python src/Appendix_Fig9_make_sentences_histogram.py
 <img src=".github/images/sentences_histogram.png" alt="fig9.png" width="50%">
 </div>
 
-### Histogram of $\textrm{log}_{10} n_t$ in Fig.10
+### Histogram of $\textrm{log}_{10} n_t$ in Fig. 10
 
 ```bash
 python src/Appendix_Fig10_make_tokens_histogram.py 
@@ -36,7 +36,7 @@ python src/Appendix_Fig10_make_tokens_histogram.py
 <img src=".github/images/tokens_histogram.png" alt="fig10.png" width="90%">
 </div>
 
-### Scatter Plots in Figs. 11, 12, and 13
+### Scatter plots in Figs. 11, 12, and 13
 
 ```bash
 python src/Appendix_Fig11to13_make_QXt_MXt_VXt_VXtonMXt_scatterplot.py
@@ -98,7 +98,7 @@ python src/Appendix_Fig20_make_VwX_VbX_VbXperVX_plot.py
 
 ### Appendix J
 
-#### Setup (For Reproducibility)
+#### Setup (for Reproducibility)
 
 Calculate statistical measures of word embeddings
 
@@ -112,7 +112,7 @@ Generate the word-to-token count dictionary:
 python src/Appendix_J_save_word2token_count.py
 ```
 
-#### Setup (Download Experimental Results)
+#### Setup (download experimental results)
 
 - [bert-base-uncased statistics (Google Drive)](https://drive.google.com/file/d/1IjR1jA-QT8DcfMRHvNYjR1ZNmhkNrAHv/view?usp=drive_link)
 
