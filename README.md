@@ -37,7 +37,7 @@ $ bash script/docker/run.sh 0
 
 ### Saving statistical measures of $X_t$
 
-#### Using Preprocessed Data from the Experiments
+#### Using preprocessed data from the experiments
 
 - [Sentences extracted from bookcorpus (Google Drive)](https://drive.google.com/file/d/1Ety83AiSanikRsDDe_JtV189UUsXKRIk/view?usp=drive_link)
 - [Statistical measures for each model (Google Drive)](https://drive.google.com/drive/folders/1nVX4eNE2T8TlMg7olmJjElcICZFoo56c?usp=drive_link)
@@ -58,7 +58,7 @@ output/
         └── roberta-large.pkl
 ```
 
-#### For Reproducibility
+#### For reproducibility
 To regenerate statistical measures:
 
 ```bash
@@ -68,7 +68,7 @@ $ python src/save_token_stats.py --model_name model_name
 The `model_name` values supported are `bert-base-uncased`, `bert-large-uncased`, `roberta-base`, `roberta-large`, `gpt2`, `gpt2-medium`.
 
 
-### PCA Plot in Fig. 1
+### PCA plot in Fig. 1
 
 ```bash
 $ python src/Fig1_make_pca_scatterplot.py
@@ -102,7 +102,7 @@ $ python src/Fig4_make_QXtCV_MXtVXtSlope_MXtVXtR2_plot.py
 <img src=".github/images/QXtCV_MXtVXtSlope_MXtVXtR2_plot.png" alt="fig4.png" width="90%">
 </div>
 
-### Bar Graphs for $M(X)/Q(X)$, $V_W(X)/Q(X)$, $V_B(X)/Q(X)$ in Fig. 5 
+### Bar graphs for $M(X)/Q(X)$, $V_W(X)/Q(X)$, $V_B(X)/Q(X)$ in Fig. 5 
 
 ```bash
 $ python src/Fig5_make_MXVwXVbX_per_QX_bargraph.py
@@ -139,7 +139,7 @@ The code for generating embeddings was inspired by:
  
 We sincerely thank the authors for sharing their [LivNLP/cosine-discounting](https://github.com/LivNLP/cosine-discounting) codebase.
 
-# Citation
+## Citation
 If you find our code or model useful in your research, please cite our paper:
 
 ```
