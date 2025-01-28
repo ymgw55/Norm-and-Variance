@@ -98,7 +98,7 @@ python src/Appendix_Fig20_make_VwX_VbX_VbXperVX_plot.py
 
 ### Appendix J
 
-#### Setup (for Reproducibility)
+#### Setup (for reproducibility)
 
 Calculate statistical measures of word embeddings
 
