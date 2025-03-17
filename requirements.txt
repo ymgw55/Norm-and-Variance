@@ -8,7 +8,7 @@ protobuf
 scikit-learn
 scipy==1.10.1
 tqdm
-transformers==4.42.3
+transformers>=4.48.0
 datasets
 nltk>=3.9
 gensim
